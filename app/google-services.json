@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "327468847452",
+    "firebase_url": "https://braintrening-ae399-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "braintrening-ae399",
+    "storage_bucket": "braintrening-ae399.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327468847452:android:cdf3bb934fe10cec763199",
+        "android_client_info": {
+          "package_name": "com.example.braintrainingexclusivefromitcube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327468847452-6h7bdea6h5s3m11a06uv6sn8vmjrh4h0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtInZqHjSNI-sjLELjfwNRClKl7jrlJhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327468847452-6h7bdea6h5s3m11a06uv6sn8vmjrh4h0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
