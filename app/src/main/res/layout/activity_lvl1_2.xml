@@ -1,137 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton3"
-        android:layout_width="123dp"
-        android:layout_height="123dp"
-        android:layout_marginTop="189dp"
-        android:layout_marginEnd="17dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka3"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton"
-        android:layout_width="132dp"
-        android:layout_height="122dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@null"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="189dp"
-        android:src="@drawable/mozayka1_2"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton2"
-        android:layout_width="125dp"
-        android:layout_height="121dp"
-        android:layout_marginTop="189dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka2_1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton4"
-        android:layout_width="132dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="13dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka4"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:ignore="SpeakableTextPresentCheck" />
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton5"
-        android:layout_width="124dp"
-        android:layout_height="118dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka5_2"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:ignore="SpeakableTextPresentCheck" />
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton6"
-        android:layout_width="124dp"
-        android:layout_height="117dp"
-        android:layout_marginEnd="16dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka6_1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton7"
-        android:layout_width="131dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="194dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka7_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton8"
-        android:layout_width="130dp"
-        android:layout_height="109dp"
-        android:layout_marginBottom="193dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton9"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        tools:ignore="SpeakableTextPresentCheck" />
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
 
-    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
-        android:id="@+id/imageButton9"
-        android:layout_width="127dp"
-        android:layout_height="111dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="191dp"
-        android:contentDescription="@null"
-        android:scaleType="centerCrop"
-        android:src="@drawable/mozayka9_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        tools:ignore="SpeakableTextPresentCheck" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
