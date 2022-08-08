@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="352dp"
+        android:layout_height="429dp"
+        android:text="Ветер – ответил про себя я. Вдруг на том месте где я появился начали сгущаться облака и поднялся сильный ветер. Я сразу подумал о нём… И он не заставил меня ждать, тот самый торнадо, что доставил меня сюда, иначе как я сюда попал я не представлял, уже начал формироваться и я побежал от него как можно дальше. Торнадо ещё не полностью сформировавшись двинулся в мою сторону, а я начал ощущать нарастающую силу притяжения. Бежал из всех сил, но силы природы, или не совсем её не дали мне и шанса, уже спустя 10 секунд меня оторвало от земли, и я полетел к торнадо. Чем ближе я приближался к нему, тем сильнее расплывалось в глазах и болело в голове. И прикоснувшись к нему рукой полностью отключился. Очнулся я в каком-то подземелье. Сыро, грязно, не самая приятная растительность и темнота. Спустя какое-то время глаза привыкли к темноте, и я осмотрел комнату в которой находился. Не обнаружив ничего примечательного кроме двери с замком, я двинулся к ней. Замок был не обычным – замочной скважины не было, на замке был написан стих и больше ничего. "
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="515dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

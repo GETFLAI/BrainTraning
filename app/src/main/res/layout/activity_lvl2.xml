@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="356dp"
+        android:layout_height="360dp"
+        android:text="После того как я собрал мозаику произошло… ничего. Как минимум я не услышал какого-нибудь звука, не заметил дрожи в земле или чего-то ещё. Ну а чего ещё я ожидал? – сказал я и тут же подумал – а вдруг стена пропала? Я побежал к невидимой стене и попытался её нащупать. Не чувствую стены я пробирался дальше и дальше пока не поднялся на один из холмов. Тут я теперь полностью убедился, что стена пропала и осмотрелся: множество возвышенностей с редкими деревьями и камнями. Также начало смеркаться, поэтому я решил найти место для ночлега. Выбрал для этого один из холмов с высоким и пышным деревом. Когда я уже собирался устроиться поудобнее и уснуть, я обнаружил у корней какую-то та табличку. Она была не большая, примерно 15 на 5 сантиметров. Протерев её от пыли и грязи обнаружил, что на неё есть надпись, так как было ещё не слишком темно прочитать её было не сложно: "
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="414dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
