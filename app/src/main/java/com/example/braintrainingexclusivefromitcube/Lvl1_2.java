@@ -29,15 +29,15 @@ public class Lvl1_2 extends AppCompatActivity {
     int type8 = 0;
     int type9 = 0;
 
-    Texture[] texturesType1Array = {getDrawable(R.drawable.mozayka1), R.drawable.mozayka1_1, R.drawable.mozayka1_2};
-    Texture[] texturesType2Array = {R.drawable.mozayka2, R.drawable.mozayka2_1, R.drawable.mozayka2_2};
-    Texture[] texturesType3Array = {R.drawable.mozayka3, R.drawable.mozayka3_1, R.drawable.mozayka3_2};
-    Texture[] texturesType4Array = {R.drawable.mozayka4, R.drawable.mozayka4_1, R.drawable.mozayka4_2};
-    Texture[] texturesType5Array = {R.drawable.mozayka5, R.drawable.mozayka5_1, R.drawable.mozayka5_2};
-    Texture[] texturesType6Array = {R.drawable.mozayka6, R.drawable.mozayka6_1, R.drawable.mozayka6_2};
-    Texture[] texturesType7Array = {R.drawable.mozayka7, R.drawable.mozayka7_1, R.drawable.mozayka7_2};
-    Texture[] texturesType8Array = {R.drawable.mozayka8, R.drawable.mozayka8_1, R.drawable.mozayka8_2};
-    Texture[] texturesType9Array = {R.drawable.mozayka9, R.drawable.mozayka9_1, R.drawable.mozayka9_2};
+    Texture[] texturesType1Array = new Texture[3] {R.drawable.mozayka1, R.drawable.mozayka1_1, R.drawable.mozayka1_2};
+    Texture[] texturesType2Array = new Texture[3] {R.drawable.mozayka2, R.drawable.mozayka2_1, R.drawable.mozayka2_2};
+    Texture[] texturesType3Array = new Texture[3] {R.drawable.mozayka3, R.drawable.mozayka3_1, R.drawable.mozayka3_2};
+    Texture[] texturesType4Array = new Texture[3] {R.drawable.mozayka4, R.drawable.mozayka4_1, R.drawable.mozayka4_2};
+    Texture[] texturesType5Array = new Texture[3] {R.drawable.mozayka5, R.drawable.mozayka5_1, R.drawable.mozayka5_2};
+    Texture[] texturesType6Array = new Texture[3] {R.drawable.mozayka6, R.drawable.mozayka6_1, R.drawable.mozayka6_2};
+    Texture[] texturesType7Array = new Texture[3] {R.drawable.mozayka7, R.drawable.mozayka7_1, R.drawable.mozayka7_2};
+    Texture[] texturesType8Array = new Texture[3] {R.drawable.mozayka8, R.drawable.mozayka8_1, R.drawable.mozayka8_2};
+    Texture[] texturesType9Array = new Texture[3] {R.drawable.mozayka9, R.drawable.mozayka9_1, R.drawable.mozayka9_2};
 
     @Override
     protected void onCreate(Bundle savedinstanceState) {
