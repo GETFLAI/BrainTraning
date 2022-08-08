@@ -14,19 +14,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE">
         <activity
-            android:name=".Lvl1"
+            android:name=".Lvl1Activity"
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".Lvl1_1"
+            android:name=".Lvl1_1Activity"
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".Lvl1_2"
+            android:name=".Lvl1_2Activity"
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".Menu"
+            android:name=".MenuActivity"
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity

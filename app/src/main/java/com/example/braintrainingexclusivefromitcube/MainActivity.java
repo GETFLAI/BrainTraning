@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.braintrainingexclusivefromitcube.core.Loop;
+
 public class MainActivity extends AppCompatActivity {
     //создаем переменную звука кнопки
     public MediaPlayer buttonSound;
@@ -22,26 +24,15 @@ public class MainActivity extends AppCompatActivity {
         //создаём обработчик кнопки
         Button buttonStart = (Button) findViewById(R.id.buttonStart);
         //создаем слушателя
-        View.OnClickListener buttonStartListener = new View.OnClickListener() {
+        buttonStart.setOnClickListener(new View.OnClickListener() {
             //создаем переход в меню
             @Override
             public void onClick(View view) {
-                soundPlay(buttonSound);
-                Intent intent = new Intent(MainActivity.this, Menu.class);
+                buttonSound.start();
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
-        };
-
-        //создаем кнопкe обработчик
-        buttonStart.setOnClickListener(buttonStartListener);
-
-        Loop loop = new Loop();
-        loop.startGame();
-    }
-
-    //создаем функцию воспроизведения звука кнопки
-    public void soundPlay(MediaPlayer sound) {
-        sound.start();
+        });
     }
 
 }

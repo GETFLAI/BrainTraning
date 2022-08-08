@@ -1,4 +1,4 @@
-package com.example.braintrainingexclusivefromitcube;
+package com.example.braintrainingexclusivefromitcube.core.assets.graphic;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;

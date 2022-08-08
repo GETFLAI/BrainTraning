@@ -1,16 +1,16 @@
-package com.example.braintrainingexclusivefromitcube;
+package com.example.braintrainingexclusivefromitcube.core;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.Display;
-import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.example.braintrainingexclusivefromitcube.core.assets.audio.Audio;
+import com.example.braintrainingexclusivefromitcube.core.assets.graphic.Graphic;
 import com.google.firebase.database.DatabaseReference;
 
 public class Core extends AppCompatActivity {

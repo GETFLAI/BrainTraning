@@ -1,4 +1,4 @@
-package com.example.braintrainingexclusivefromitcube;
+package com.example.braintrainingexclusivefromitcube.core.assets.audio;
 
 
 import android.app.Activity;

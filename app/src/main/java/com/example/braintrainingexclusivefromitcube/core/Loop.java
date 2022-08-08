@@ -1,4 +1,4 @@
-package com.example.braintrainingexclusivefromitcube;
+package com.example.braintrainingexclusivefromitcube.core;
 
 import java.util.Date;
 

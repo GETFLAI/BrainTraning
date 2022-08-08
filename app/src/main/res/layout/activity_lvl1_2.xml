@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton3"
         android:layout_width="123dp"
         android:layout_height="123dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton"
         android:layout_width="132dp"
         android:layout_height="122dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton2"
         android:layout_width="125dp"
         android:layout_height="121dp"
@@ -49,7 +49,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton4"
         android:layout_width="132dp"
         android:layout_height="117dp"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton5"
         android:layout_width="124dp"
         android:layout_height="118dp"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton6"
         android:layout_width="124dp"
         android:layout_height="117dp"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton7"
         android:layout_width="131dp"
         android:layout_height="109dp"
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton8"
         android:layout_width="130dp"
         android:layout_height="109dp"
@@ -120,7 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
+    <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
         android:id="@+id/imageButton9"
         android:layout_width="127dp"
         android:layout_height="111dp"
