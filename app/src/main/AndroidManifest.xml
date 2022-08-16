@@ -12,60 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE">
         <activity
-            android:name=".view.lvl7_1"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl7"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl6_1"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl6"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl5_1"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl5"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl4_1"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl4"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl3_1"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl3"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl2_1"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl2"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl1_1"
-            android:exported="false" />
-        <activity
-            android:name=".view.lvl1"
-            android:exported="false" />
-        <activity
-            android:name=".Lvl1Activity"
-            android:exported="false"
-            android:screenOrientation="fullSensor" />
-        <activity
-            android:name=".Lvl1_1Activity"
-            android:exported="false"
-            android:screenOrientation="fullSensor" />
-        <activity
-            android:name=".Lvl1_2Activity"
-            android:exported="false"
-            android:screenOrientation="fullSensor" />
-        <activity
             android:name=".MenuActivity"
             android:exported="false"
             android:screenOrientation="fullSensor" />
