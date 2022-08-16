@@ -12,7 +12,16 @@ import com.example.braintrainingexclusivefromitcube.core.Loop;
 
 public class MenuActivity extends AppCompatActivity {
     //создаем переменную звука кнопки
-    public MediaPlayer buttonSound;
+    private MediaPlayer buttonSound;
+    // кнопки
+    private Button btExit;
+    private Button btLvl1;
+    private Button btLvl2;
+    private Button btLvl3;
+    private Button btLvl4;
+    private Button btLvl5;
+    private Button btLvl6;
+    private Button btLvl7;
 
     //связка меню - начало
     @Override
@@ -21,120 +30,82 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         //инициализируем переменную звука кнопки
         buttonSound = MediaPlayer.create(this, R.raw.button);
-        //создаём обработчик кнопки
-        Button buttonExitMenu = (Button) findViewById(R.id.buttonExitMenu);
-        //создаем кнопкe обработчик
-        buttonExitMenu.setOnClickListener(new View.OnClickListener() {
+        // инициализируем кнопки
+        btExit = findViewById(R.id.buttonExitMenu);
+        btLvl1 = findViewById(R.id.buttonGoLvl1);
+        btLvl2 = findViewById(R.id.buttonGoLvl2);
+        btLvl3 = findViewById(R.id.buttonGoLvl3);
+        btLvl4 = findViewById(R.id.buttonGoLvl4);
+        btLvl5 = findViewById(R.id.buttonGoLvl5);
+        btLvl6 = findViewById(R.id.buttonGoLvl6);
+        btLvl7 = findViewById(R.id.buttonGoLvl7);
+
+        //выход
+        btExit.setOnClickListener(new View.OnClickListener() {
             //создаем выход обратно
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, MainActivity.class);
+                finish();
+            }
+        });
+
+        // выбор на уровня игры
+
+        btLvl1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                buttonSound.start();
+                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
                 startActivity(intent);
             }
         });
 
-        //связка меню - 1лвл
-
-        //создаём обработчик кнопки
-        Button buttonStart1lvl = (Button) findViewById(R.id.buttonGoLvl1);
-        //создаем кнопкe обработчик
-        buttonStart1lvl.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
+        btLvl2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl1Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
                 startActivity(intent);
             }
         });
-
-        //связка меню - 2лвл
-
-        //создаём обработчик кнопки
-        Button buttonStart2lvl = (Button) findViewById(R.id.buttonGoLvl2);
-        //создаем кнопкe обработчик
-        buttonStart2lvl.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
+        btLvl3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl2Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
                 startActivity(intent);
             }
         });
-
-        //связка меню - 3лвл
-
-        //создаём обработчик кнопки
-        Button buttonStart3lvl = (Button) findViewById(R.id.buttonGoLvl3);
-        //создаем кнопкe обработчик
-        buttonStart3lvl.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
+        btLvl4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl3Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
                 startActivity(intent);
             }
         });
-
-        //связка меню - 4лвл
-
-        //создаём обработчик кнопки
-        Button buttonStart4lvl = (Button) findViewById(R.id.buttonGoLvl4);
-        //создаем кнопкe обработчик
-        buttonStart4lvl.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
+        btLvl5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl4Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
                 startActivity(intent);
             }
         });
-
-        //связка меню - 5лвл
-
-        //создаём обработчик кнопки
-        Button buttonStart5lvl = (Button) findViewById(R.id.buttonGoLvl5);
-        //создаем кнопкe обработчик
-        buttonStart5lvl.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
+        btLvl6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl5Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
                 startActivity(intent);
             }
         });
-
-        //связка меню - 6лвл
-
-        //создаём обработчик кнопки
-        Button buttonStart6lvl = (Button) findViewById(R.id.buttonGoLvl6);
-        //создаем кнопкe обработчик
-        buttonStart6lvl.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
+        btLvl7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl6Activity.class);
-                startActivity(intent);
-            }
-
-        });
-        //связка меню - 7лвл
-
-        //создаём обработчик кнопки
-        Button buttonStart7lvl = (Button) findViewById(R.id.buttonGoLvl7);
-        //создаем кнопкe обработчик
-        buttonStart7lvl.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
-            @Override
-            public void onClick(View view) {
-                buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl7Activity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
                 startActivity(intent);
             }
         });

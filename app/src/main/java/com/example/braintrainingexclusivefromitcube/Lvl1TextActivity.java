@@ -8,32 +8,40 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.braintrainingexclusivefromitcube.core.Loop;
+public class Lvl1TextActivity extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
     //создаем переменную звука кнопки
     private MediaPlayer buttonSound;
-    private Button btStart;
+    // кнопки
+    private Button btExit;
+    private Button btNext;
 
-    //связка начало - меню
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lvl1_text);
         //инициализируем переменную звука кнопки
         buttonSound = MediaPlayer.create(this, R.raw.button);
-        //создаём обработчик кнопки
-        Button btStart = findViewById(R.id.buttonStart);
-        //создаем слушателя
-        btStart.setOnClickListener(new View.OnClickListener() {
-            //создаем переход в меню
+        // инициализируем кнопки
+        btExit = findViewById(R.id.buttonBack);
+        btNext = findViewById(R.id.buttonNext);
+
+        // далее/назад
+        btExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                finish();
+            }
+        });
+        btNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                buttonSound.start();
+                Intent intent = new Intent(Lvl1TextActivity.this, Lvl1TaskActivity.class);
                 startActivity(intent);
             }
         });
     }
-
 }

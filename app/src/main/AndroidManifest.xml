@@ -10,7 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE">
+        android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE"
+        android:screenOrientation="portrait">
+        <activity
+            android:name=".Lvl1TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lvl1TextActivity"
+            android:exported="false" />
         <activity
             android:name=".MenuActivity"
             android:exported="false"
