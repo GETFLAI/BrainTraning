@@ -11,4 +11,12 @@
         android:text="Зубы? – спросил я. Да – ответил, тот, что дал мне головоломку – нынче зубы лечить дорого, так – что копи на них с сегодняшнего дня) Я скептически посмотрел на него, но промолчал. Вдруг они все окружили меня в большой круг и начали произносить какие-то слова. Спустя несколько секунд я почувствовал невесомость и моргнув оказался в какой-то ярко синей комнате.  Я осмотрелся и ничего не увидел, кроме яркого синего света. Тут же прогремел голос главного из людей в мантиях: Это последнее испытание перед тем, как мы тебя выпустим! Как только он закончил говорить, комната начала меняться… "
         tools:layout_editor_absoluteX="47dp"
         tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/buttonGoLvl7_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="434dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

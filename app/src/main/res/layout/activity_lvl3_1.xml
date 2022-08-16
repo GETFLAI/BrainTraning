@@ -19,4 +19,12 @@
         android:ems="10"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="343dp" />
+
+    <Button
+        android:id="@+id/buttonGoMenu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="503dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

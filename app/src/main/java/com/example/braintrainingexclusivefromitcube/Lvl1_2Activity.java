@@ -1,8 +1,11 @@
 package com.example.braintrainingexclusivefromitcube;
 
+import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -13,6 +16,9 @@ import com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageVie
 import com.google.android.filament.Texture;
 
 public class Lvl1_2Activity extends AppCompatActivity {
+
+    //создаем переменную звука кнопки
+    public MediaPlayer buttonSound;
 
 
     RotatableSquareImageView imageButton1;
@@ -30,6 +36,22 @@ public class Lvl1_2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lvl1_2);
 
+        //создаём связку уровень 1_2 - меню
+        //инициализируем переменную звука кнопки
+        buttonSound = MediaPlayer.create(this, R.raw.button);
+        //создаём обработчик кнопки
+        Button bottonGOMenu1 = (Button) findViewById(R.id.bottonGoMenu1);
+        //создаем кнопкe обработчик
+        bottonGOMenu1.setOnClickListener(new View.OnClickListener() {
+            //создаем выход обратно
+            @Override
+            public void onClick(View view) {
+                buttonSound.start();
+                Intent intent = new Intent(Lvl1_2Activity.this, MenuActivity.class);
+                startActivity(intent);
+            }
+        });
+
         imageButton1 = findViewById(R.id.imageButton);
         imageButton2 = findViewById(R.id.imageButton2);
         imageButton3 = findViewById(R.id.imageButton3);
@@ -41,13 +63,13 @@ public class Lvl1_2Activity extends AppCompatActivity {
         imageButton9 = findViewById(R.id.imageButton9);
 
         imageButton1.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka1)).getBitmap());
-        imageButton2.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka2)).getBitmap());
-        imageButton3.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka3)).getBitmap());
-        imageButton4.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka4)).getBitmap());
-        imageButton5.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka5)).getBitmap());
-        imageButton6.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka6)).getBitmap());
-        imageButton7.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka7)).getBitmap());
-        imageButton8.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka8)).getBitmap());
+        imageButton2.setMaster(RotatableSquareImageView.Rotate.SECOND, ((BitmapDrawable)getDrawable(R.drawable.mozayka2)).getBitmap());
+        imageButton3.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka3)).getBitmap());
+        imageButton4.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka4)).getBitmap());
+        imageButton5.setMaster(RotatableSquareImageView.Rotate.SECOND, ((BitmapDrawable)getDrawable(R.drawable.mozayka5)).getBitmap());
+        imageButton6.setMaster(RotatableSquareImageView.Rotate.SECOND, ((BitmapDrawable)getDrawable(R.drawable.mozayka6)).getBitmap());
+        imageButton7.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka7)).getBitmap());
+        imageButton8.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka8)).getBitmap());
         imageButton9.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka9)).getBitmap());
 
         View.OnClickListener onImageClickListener = new View.OnClickListener() {
