@@ -2,9 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.braintrainingexclusivefromitcube">
 
-    //дали разрешение не уходить в спящий режим
-    <uses-permission android:name="android.permission.WAKE_LOCK">
-    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +11,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE">
+        <activity
+            android:name=".view.lvl7_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl7"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl6_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl6"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl5_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl5"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl4_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl4"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl3_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl3"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl2_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl2"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl1_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.lvl1"
+            android:exported="false" />
         <activity
             android:name=".Lvl1Activity"
             android:exported="false"
@@ -32,7 +72,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="fullSensor" >
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
