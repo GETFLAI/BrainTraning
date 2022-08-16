@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.braintrainingexclusivefromitcube.utils.BitmapMosaicUtil;
 import com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView;
 
 public class Lvl1TaskActivity extends AppCompatActivity {
@@ -71,15 +73,16 @@ public class Lvl1TaskActivity extends AppCompatActivity {
         imageButton8 = findViewById(R.id.imageButton8);
         imageButton9 = findViewById(R.id.imageButton9);
 
-        imageButton1.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka1)).getBitmap());
-        imageButton2.setMaster(RotatableSquareImageView.Rotate.SECOND, ((BitmapDrawable)getDrawable(R.drawable.mozayka2)).getBitmap());
-        imageButton3.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka3)).getBitmap());
-        imageButton4.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka4)).getBitmap());
-        imageButton5.setMaster(RotatableSquareImageView.Rotate.SECOND, ((BitmapDrawable)getDrawable(R.drawable.mozayka5)).getBitmap());
-        imageButton6.setMaster(RotatableSquareImageView.Rotate.SECOND, ((BitmapDrawable)getDrawable(R.drawable.mozayka6)).getBitmap());
-        imageButton7.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka7)).getBitmap());
-        imageButton8.setMaster(RotatableSquareImageView.Rotate.FOURTH, ((BitmapDrawable)getDrawable(R.drawable.mozayka8)).getBitmap());
-        imageButton9.setMaster(RotatableSquareImageView.Rotate.FIRST, ((BitmapDrawable)getDrawable(R.drawable.mozayka9)).getBitmap());
+        Bitmap[][] res = BitmapMosaicUtil.sliceBitmap(((BitmapDrawable)getDrawable(R.drawable.mozayka1)).getBitmap(), 3, 3);
+        imageButton1.setMaster(RotatableSquareImageView.Rotate.FIRST,res[0][0]);
+        imageButton2.setMaster(RotatableSquareImageView.Rotate.SECOND,res[0][1]);
+        imageButton3.setMaster(RotatableSquareImageView.Rotate.FOURTH,res[0][2]);
+        imageButton4.setMaster(RotatableSquareImageView.Rotate.FOURTH,res[1][0]);
+        imageButton5.setMaster(RotatableSquareImageView.Rotate.SECOND,res[1][1]);
+        imageButton6.setMaster(RotatableSquareImageView.Rotate.SECOND,res[1][2]);
+        imageButton7.setMaster(RotatableSquareImageView.Rotate.FOURTH,res[2][0]);
+        imageButton8.setMaster(RotatableSquareImageView.Rotate.FOURTH,res[2][1]);
+        imageButton9.setMaster(RotatableSquareImageView.Rotate.FIRST,res[2][2]);
 
         View.OnClickListener onImageClickListener = new View.OnClickListener() {
             @Override
