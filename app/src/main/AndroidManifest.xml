@@ -9,18 +9,51 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="fullSensor"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE"
-        android:screenOrientation="fullSensor">
+        android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE">
+        <activity
+            android:name=".view.Lvl6TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl6TextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl5TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.LvlTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl5TextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl4TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl4TextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl3TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl3TextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl2TaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.Lvl2TextActivity"
+            android:exported="false" />
         <activity
             android:name=".Lvl1TaskActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Lvl1TextActivity"
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

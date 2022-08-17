@@ -50,7 +50,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        // выбор на уровня игры
+        // выбор уровня игры
 
         btLvl1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +65,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl2TextActivity.class);
                 startActivity(intent);
             }
         });
@@ -73,7 +73,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl3TextActivity.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +81,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl4TextActivity.class);
                 startActivity(intent);
             }
         });
@@ -89,7 +89,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl5TextActivity.class);
                 startActivity(intent);
             }
         });
@@ -97,7 +97,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(MenuActivity.this, Lvl1TextActivity.class);
+                Intent intent = new Intent(MenuActivity.this, Lvl6TextActivity.class);
                 startActivity(intent);
             }
         });

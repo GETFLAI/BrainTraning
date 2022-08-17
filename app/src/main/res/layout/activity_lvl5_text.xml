@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lvl5TextActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="160dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="36dp"
+            android:text="Открыв пути всем каналам куб разложился в механический лотос, в центре которого была круглая платформа. Спустя 3 секунды на ней появились люди в синих мантиях! Те самые, которых я заметил, идя в магазин.
+Тот, что был впереди них заговорил: ты прошёл 4 испытания, доказав, что ты не так глуп, как кажешься на первый взгляд. Тебе осталось пройти ещё 3, и ты выберешься на свободу. – сказав это он махнул человеку с права, и он дал мне странную головоломку.
+Реши её, и ты пройдёшь дальше, иначе останешься тут на всегда. – сказал человек в мантии по правую сторону от главного из них.
+
+" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="90dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBack"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Возврат"
+            app:cornerRadius="35dp" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonNext"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Далее"
+            app:cornerRadius="35dp" />
+
+    </LinearLayout>
+</FrameLayout>

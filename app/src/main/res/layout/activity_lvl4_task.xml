@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lvl4TaskActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView
+                android:id="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="90dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBack"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Возврат"
+            app:cornerRadius="35dp" />
+
+        <View
+            android:id="@+id/barrier"
+            android:layout_width="48dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonNext"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Далее"
+            android:visibility="gone"
+            app:cornerRadius="35dp" />
+
+    </LinearLayout>
+</FrameLayout>

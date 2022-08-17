@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.example.braintrainingexclusivefromitcube.utils.BitmapMosaicUtil;
 import com.example.braintrainingexclusivefromitcube.view.RotatableSquareImageView;
 
-public class Lvl1TaskActivity extends AppCompatActivity {
+public class Lvl4TaskActivity extends AppCompatActivity {
 
     //создаем переменную звука кнопки
     private MediaPlayer buttonSound;
@@ -38,7 +38,7 @@ public class Lvl1TaskActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lvl1_task);
+        setContentView(R.layout.activity_lvl4_task);
 
         //инициализируем переменную звука кнопки
         buttonSound = MediaPlayer.create(this, R.raw.button);
@@ -57,7 +57,7 @@ public class Lvl1TaskActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonSound.start();
-                Intent intent = new Intent(Lvl1TaskActivity.this, MenuActivity.class);
+                Intent intent = new Intent(Lvl4TaskActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +72,7 @@ public class Lvl1TaskActivity extends AppCompatActivity {
         imageButton8 = findViewById(R.id.imageButton8);
         imageButton9 = findViewById(R.id.imageButton9);
 
-        Bitmap[][] res = BitmapMosaicUtil.sliceBitmap(((BitmapDrawable)getDrawable(R.drawable.mozayka)).getBitmap(), 3, 3);
+        Bitmap[][] res = BitmapMosaicUtil.sliceBitmap(((BitmapDrawable)getDrawable(R.drawable.mozaika2)).getBitmap(), 3, 3);
         imageButton1.setMaster(RotatableSquareImageView.Rotate.FIRST,res[0][0]);
         imageButton2.setMaster(RotatableSquareImageView.Rotate.SECOND,res[0][1]);
         imageButton3.setMaster(RotatableSquareImageView.Rotate.FOURTH,res[0][2]);
@@ -99,9 +99,9 @@ public class Lvl1TaskActivity extends AppCompatActivity {
                                 imageButton9.isMaster()
                 ){
                     // если все картинки в изначальном положении
-                    AlertDialog.Builder b = new AlertDialog.Builder(Lvl1TaskActivity.this);
+                    AlertDialog.Builder b = new AlertDialog.Builder(Lvl4TaskActivity.this);
                     b.setTitle("Поздравляем!");
-                    b.setMessage("Вы прошли первый уровень!");
+                    b.setMessage("Вы прошли четвёртый уровень!");
                     b.setPositiveButton("ок", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
