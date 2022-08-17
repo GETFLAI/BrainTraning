@@ -13,37 +13,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE">
         <activity
-            android:name=".view.Lvl6TaskActivity"
+            android:name=".Lvl6TaskActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl6TextActivity"
+            android:name=".Lvl6TextActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl5TaskActivity"
+            android:name=".Lvl5TaskActivity"
             android:exported="false" />
         <activity
-            android:name=".view.LvlTaskActivity"
+            android:name=".Lvl5TextActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl5TextActivity"
+            android:name=".Lvl4TaskActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl4TaskActivity"
+            android:name=".Lvl4TextActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl4TextActivity"
+            android:name=".Lvl3TaskActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl3TaskActivity"
+            android:name=".Lvl3TextActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl3TextActivity"
+            android:name=".Lvl2TaskActivity"
             android:exported="false" />
         <activity
-            android:name=".view.Lvl2TaskActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.Lvl2TextActivity"
+            android:name=".Lvl2TextActivity"
             android:exported="false" />
         <activity
             android:name=".Lvl1TaskActivity"
