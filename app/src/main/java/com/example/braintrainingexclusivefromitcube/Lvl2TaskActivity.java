@@ -22,6 +22,7 @@ public class Lvl2TaskActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lvl2_task);
         //инициализируем переменную звука кнопки
         buttonSound = MediaPlayer.create(this, R.raw.button);
         // инициализируем EditText

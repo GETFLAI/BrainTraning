@@ -44,5 +44,5 @@
         android:id="@+id/Vopros2"
         android:layout_width="match_parent"
         android:layout_height="171dp"
-        android:text="Напишите ответ маленькими буквами" />
+        android:text="Ответ?" />
 </FrameLayout>
