@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#009688"
     android:orientation="vertical"
-    tools:context=".Lvl1TaskActivity">
+    tools:context=".Lvl7TaskActivity">
 
     <LinearLayout
         android:layout_width="300dp"

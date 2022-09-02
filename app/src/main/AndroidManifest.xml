@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BrainTrainingExclusiveFromITCUBE">
         <activity
+            android:name=".Lvl7TextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lvl7TaskActivity"
+            android:exported="false" />
+        <activity
             android:name=".Lvl6TaskActivity"
             android:exported="false" />
         <activity

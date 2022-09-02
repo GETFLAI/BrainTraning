@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009688"
     android:orientation="vertical"
     tools:context=".MenuActivity">
 
@@ -14,8 +15,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height='wrap_content'
-            android:orientation="vertical"
-            android:layout_margin="36dp">
+            android:layout_margin="36dp"
+            android:orientation="vertical">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonGoLvl1"
@@ -88,10 +89,10 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Возврат"
-        app:cornerRadius="35dp"
+        android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="120dp"
-        android:layout_gravity="bottom|center_horizontal"/>
+        android:text="Возврат"
+        app:cornerRadius="35dp" />
 
 
 </FrameLayout>
